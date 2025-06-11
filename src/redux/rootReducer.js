@@ -1,0 +1,18 @@
+import { combineReducers } from 'redux';
+import ItemReducer from './item/itemReducer';
+import itemReducer from './items/itemReducer';
+import userReducer from './users/userReducer';
+import userRegisterReducer from './users/userRegisterReducer';
+import favouriteReducer from './favourites/favouriteReducer';
+import getFavReducer from './favourites/getFavReducer';
+
+const rootReducer = combineReducers({
+  items: itemReducer,
+  Item: itemReducer,
+  user: userReducer,
+  signup: userRegisterReducer,
+  favourites: favouriteReducer,
+  getFavs: getFavReducer,
+});
+
+export default rootReducer;

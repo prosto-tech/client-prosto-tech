@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #373737;
+  background-color: #b9b6b6;
+}
+
+.container {
+  max-width: 768px !important;
+  padding: 0 !important;
+}
+
+.slack {
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 400px;
+  background: url("./imgs/head_image.png") bottom center no-repeat;
+  padding: 30px;
+
+  &-content {
+    display: grid;
+    column-count: 3;
+    grid-template-rows: 200px;
+    gap: 12px;
+    width: 100%;
+    color: #fff;
+    
+    &__title {
+      font-size: 22px;
+      font-weight: 700;
+      width: 250px;
+      padding-left: 60px;
+      padding-top: 25px;
+      text-shadow: 1px 2px 2px rgba($color: #000, $alpha: 0.6);
+    }
+
+    &__desc {
+      font-weight: 100;
+      max-width: 180px;
+      max-height: 150px;
+      grid-column-start: 3;
+      text-shadow: 0 1px 1px rgba($color: #000, $alpha: 0.9);
+    }
+  }
+}
+
+.logo {
+  width: 120px;
+}
+
+.about-section {
+  padding: 10px;
+  background-color: #fff;
+
+  &__sub {
+    text-transform: uppercase;
+    color: #b9b6b6;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__primary,
+  &__left-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__left-title {
+    text-align: left;
+  }
+
+  &__desc {
+    font-weight: 100;
+    font-size: 14px;
+    color: #000;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.feature-section {
+  background-color: #e8f0ff;
+}
+
+.call-action {
+  height: 150px;
+  background: url("./imgs/call_action.jpg") top center no-repeat;
+  color: #e8f0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.call-action-text{
+width: 600px;
+}
+
+.footer {
+  color: #b9b6b6;
+  text-align: center;
+  font-size: small;
+}
+.submit,
+.btn-oval {
+  margin-left: 30px;
+  font-weight: 500 !important;
+  border-radius: 20px !important;
+  background-color: #f97300 !important;
+  border-color: #f97300 !important;
+  color: #000 !important;
+}
+.img-fluid{
+  padding-left: 30px;
+    padding-right: 30px;
+}
+.btn-menu {
+  font-weight: 500 !important;
+  border-radius: 35px !important;
+  background-color: #f97300 !important;
+  border-color: #f97300 !important;
+  color: #000 !important;
+  padding: 5px 8px;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.login-box {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.login-box::after {
+  content: "";
+  background: url("./imgs/head_image.png") bottom center no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.form-control {
+  border-radius: 20px !important;
+  padding: 5px 10px !important;
+}
+
+.modal-popup {
+  overflow: hidden;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.badge-color,
+.badge-transmission,
+.badge-odometer,
+.badge-ac,
+.badge-battery,
+.badge-price {
+  background-color: rgb(76, 91, 79);
+  color:#fff;
+  font-size: small;
+}
+
+.text-danger {
+  color: #000 !important;
+}
+
+.back_link{
+  padding-left: 6rem;
+  padding-right: 6rem;
+  text-align: center;
+  color: #fff !important;
+}
+
+.date-label,
+.phone-label{
+  padding-top: 6px;
+  color: #fff !important;
+  font-size: medium;
+}
+
+.back{
+  color: #000 !important;
+  padding-left: 6rem;
+  padding-right: 2rem;
+}
+.itemTitle {
+  font-weight: 600 !important;
+
+  font-size: x-large;
+  color: #000 !important;
+}
+.about_section{
+align-self: start;
+padding: 10px;
+background-color: #fff;
+
+&_info {
+  text-transform: uppercase;
+  color: #b9b6b6;
+  text-align: center;
+  font-size: 13px;
+}
+&__primary,
+&__left-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+&__left-title {
+  text-align: left;
+}
+
+&__desc {
+  font-weight: 100;
+  font-size: 14px;
+  color: #000;
+}
+
+
+}
+.btn-oval-item {
+  background-color: rgb(57, 196, 57);
+  color:#fff;
+  font-weight: 500 !important;
+  border-radius: 20px !important;
+}
+.navbar-toggler-icon {
+background-image: url('/imgs/menu.png') !important;
+}
+.navbar-toggler{
+  border-color: #fff !important;
+  color: #fff !important;
+}
+.navbar-brand{
+  background-color: #b9b6b6 !important;
+  opacity: 0.6;
+}
+
+.form-control {
+  border-radius: 20px !important;
+  padding: 5px 10px !important;
+}
+.formUsername,
+.formDate,
+.formPhone,
+.form-group {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.driveTitle{
+  padding-top: 20px;
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: x-large;
+  color: #fff !important;
+}
+.driveDesc {
+  text-align: center;
+  font-weight: 100;
+  font-size: medium;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.submit{
+  font-weight: 500 !important;
+  border-radius: 20px !important;
+  background-color: #f97300 !important;
+  border-color: #f97300 !important;
+  color: #000 !important;
+  width: fit-content;
+  height: 40px;
+  align-content: left;
+}
+
+.drive-flex{
+ padding-top: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Add some spacing between form rows */
+}
+.add-item-title{
+  align-self: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 1px 2px 2px rgba($color: #000, $alpha: 0.6);
+}
+.add-item-subtitle{
+  align-self: center;
+    font-weight: 100;
+    text-shadow: 0 1px 1px rgba($color: #000, $alpha: 0.4);
+}
+
+.form-row {
+  display: flex; /* Make each row a flexbox container */
+  align-items: center; /* Align items vertically in the row */
+}
+
+.form-group {
+  display: flex; /* Make each form group a flexbox container */
+  gap: 0.5rem; /* Add some spacing between label and input */
+}
+
+.form-label {
+  width: 30%; /* Set label width */
+  align-self: center;
+  text-align: left; /* Align labels to the left */
+}
+.ac-check,
+.input {
+  width: 70%;
+  align-self: center;
+  display: flex;
+  align-content: center;
+  flex: 1; /* Allow inputs to grow and fill remaining space */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-input input,
+.form-input textarea {
+  width: 100%; /* Set input width to 100% of its container */
+}
