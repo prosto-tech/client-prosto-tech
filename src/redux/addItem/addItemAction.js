@@ -1,38 +1,38 @@
 import axios from 'axios';
 import {
-  ADD_CAR_REQUEST,
-  ADD_CAR_SUCCESS,
-  ADD_CAR_FAILURE,
-  REMOVE_CAR_SUCCESS,
-  REMOVE_CAR_FAILURE,
-  REMOVE_CAR_REQUEST,
+  ADD_ITEM_REQUEST,
+  ADD_ITEM_SUCCESS,
+  ADD_ITEM_FAILURE,
+  REMOVE_ITEM_SUCCESS,
+  REMOVE_ITEM_FAILURE,
+  REMOVE_ITEM_REQUEST,
 } from './addItemTypes';
 
 export const addItemRequest = () => ({
-  type: ADD_CAR_REQUEST,
+  type: ADD_ITEM_REQUEST,
 });
 
 export const addItemSuccess = message => ({
-  type: ADD_CAR_SUCCESS,
+  type: ADD_ITEM_SUCCESS,
   payload: message,
 });
 
 export const addItemFailure = error => ({
-  type: ADD_CAR_FAILURE,
+  type: ADD_ITEM_FAILURE,
   payload: error,
 });
 
 export const removeItemRequest = () => ({
-  type: REMOVE_CAR_REQUEST,
+  type: REMOVE_ITEM_REQUEST,
 });
 
 export const removeItemSuccess = message => ({
-  type: REMOVE_CAR_SUCCESS,
+  type: REMOVE_ITEM_SUCCESS,
   payload: message,
 });
 
 export const removeItemFailure = error => ({
-  type: REMOVE_CAR_FAILURE,
+  type: REMOVE_ITEM_FAILURE,
   payload: error,
 });
 

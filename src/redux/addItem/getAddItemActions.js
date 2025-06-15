@@ -1,19 +1,19 @@
 import axios from 'axios';
 import {
-  FETCH_CAR_REQUEST, FETCH_CAR_SUCCESS, FETCH_CAR_FAILURE,
+  FETCH_ITEM_REQUEST, FETCH_ITEM_SUCCESS, FETCH_ITEM_FAILURE,
 } from './favouriteTypes';
 
 export const fetchAddItemRequest = () => ({
-  type: FETCH_CAR_REQUEST,
+  type: FETCH_ITEM_REQUEST,
 });
 
 export const fetchAddItemSuccess = items => ({
-  type: FETCH_CAR_SUCCESS,
+  type: FETCH_ITEM_SUCCESS,
   payload: items,
 });
 
 export const fetchAddItemFailure = error => ({
-  type: FETCH_CAR_FAILURE,
+  type: FETCH_ITEM_FAILURE,
   payload: error,
 });
 
