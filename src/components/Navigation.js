@@ -10,7 +10,7 @@ export default function Navigation() {
 
   return (
     <Navbar collapseOnSelect expand="sm">
-      <Navbar.Brand href="/"><img className="logo" src={logo} alt="Item shop ecoway"  /></Navbar.Brand>
+      <Navbar.Brand href="/"><img className="logo" src={logo} alt="Item shop Просто Тех"  /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" />
@@ -27,15 +27,15 @@ export default function Navigation() {
     <>
       {username === 'admin' ? (
        <>
-       <Link className="nav-link white" to="/items">Автомобілі</Link>
-       <Link className="nav-link white" to="/add_item">Додати автомобіль</Link>
+       <Link className="nav-link white" to="/items">Товари</Link>
+       <Link className="nav-link white" to="/add_item">Додати товар</Link>
        <Link className="nav-link white" to="/logout">
          Вихід
        </Link>
      </>
       ) : (
         <>
-          <Link className="nav-link white" to="/items">Автомобілі</Link>
+          <Link className="nav-link white" to="/items">Товари</Link>
           <Link className="nav-link white" to="/favourites">Вподобані</Link>
           <Link className="nav-link white" to="/logout">Вихід</Link>
         </>

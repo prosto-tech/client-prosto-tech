@@ -40,8 +40,8 @@ function AddItem({ addItem, itemData }) {
   return (
     <form onSubmit={handleSubmit}>
         <div className="add-item-form">
-          <h2 className="add-item-title">Додати автомобіль</h2>
-          <p className="add-item-subtitle">Заповніть форму, щоб додати новий автомобіль.</p>
+          <h2 className="add-item-title">Додати товар</h2>
+          <p className="add-item-subtitle">Заповніть форму, щоб додати новий товар.</p>
           <div className="input"> 
           <label className="form-label" htmlFor="make">
             Виробник:
@@ -68,45 +68,6 @@ function AddItem({ addItem, itemData }) {
             required
           />
           </div>
-       <div className="input">
-          <label className="form-label" htmlFor="year">
-            Рік випуску:
-          </label>
-          <input
-            ref={year}
-            type="number"
-            id="year"
-            name="year"
-            placeholder="Введіть рік випуску"
-            required
-          />
-          </div>
-       <div className="input">
-          <label className="form-label" htmlFor="color">
-            Колір:
-          </label>
-          <input
-            ref={color}
-            type="text"
-            id="color"
-            name="color"
-            placeholder="Введіть колір"
-            required
-          />
-          </div>
-       <div className="input">
-          <label className="form-label" htmlFor="odometer">
-            Пробіг (км):
-          </label>
-          <input
-            ref={odometer}
-            type="number"
-            id="odometer"
-            name="odometer"
-            placeholder="Введіть пробіг"
-            required
-          />
-          </div>
       <div className="input">
           <label className="form-label" htmlFor="price">
             Ціна ($):
@@ -121,49 +82,10 @@ function AddItem({ addItem, itemData }) {
           />
           </div>
       <div className="input">
-          <label className="form-label" htmlFor="battery">
-            Ємність акумулятора (Ah):
-          </label>
-          <input
-            ref={battery}
-            type="number"
-            id="battery"
-            name="battery"
-            placeholder="Введіть ємність акумулятора"
-            required
-          />
-          </div>
-      <div className="input">
           <label className="form-label" htmlFor="desc">
             Опис:
           </label>
           <textarea ref={desc} id="desc" name="desc" placeholder="Введіть опис" />
-          </div>
-          <div className="input">
-          <label className="form-label" htmlFor="maxCapacity">
-            Максимальна кількість пасажирів:
-          </label>
-          <input
-            ref={maxCapacity}
-            type="number"
-            id="maxCapacity"
-            name="maxCapacity"
-            placeholder="Введіть максимальну кількість пасажирів"
-            required
-          />
-      </div>
-      <div className="input">
-          <label className="form-label" htmlFor="transmission">
-            Трансмісія:
-          </label>
-          <input
-            ref={transmission}
-            type="text"
-            id="transmission"
-            name="transmission"
-            placeholder="Введіть тип трансмісії"
-            required
-          />
           </div>
       <div className="input">
           <label className="form-label" htmlFor="imageUrl">
@@ -178,18 +100,12 @@ function AddItem({ addItem, itemData }) {
             required
           />
           </div>
-      <div className="ac-check">
-          <label className="form-label">
-            Кондиціонер:
-          </label>
-          <input type="checkbox" ref={ac} />
-          </div>
-          <div className="form-actions">
+            <div className="form-actions">
       <Link className="back_link" to="/items">
-        &larr; До машин
+        &larr; До товарів
       </Link>
       <button type="submit" className="submit">
-        Додати автомобіль
+        Додати товар
       </button>
     </div>
   </div>
