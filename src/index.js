@@ -7,7 +7,7 @@ import Routes from './Routes';
 import './App.scss';
 import store from './redux/store';
 
-axios.defaults.baseURL = "http://localhost:3000/"//'https://electro-backup-server.onrender.com';
+axios.defaults.baseURL = "https://server-prosto-tech.onrender.com";
 axios.defaults.headers.common.Authorization = `Bearer ${localStorage.getItem('ElectroBackupsToken')}`;
 
 
