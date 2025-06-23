@@ -12,6 +12,9 @@ body {
 .container {
   max-width: 768px !important;
   padding: 0 !important;
+  .navbar{
+    background-color: #343a40;
+  }
 }
 
 .slack {
@@ -35,9 +38,9 @@ body {
     &__title {
       font-size: 22px;
       font-weight: 700;
+      align-self: center;
       width: 250px;
       padding-left: 80px;
-      padding-top: 25px;
       text-shadow: 1px 2px 2px rgba($color: #000, $alpha: 0.6);
     }
 
@@ -180,7 +183,7 @@ width: 600px;
 .badge-ac,
 .badge-battery,
 .badge-price {
-  background-color: rgb(64, 63, 61);
+  background-color: rgb(99, 60, 0);
   color:#fff;
   font-size: small;
 }
@@ -193,7 +196,7 @@ width: 600px;
   padding-left: 6rem;
   padding-right: 6rem;
   text-align: center;
-  color: #1c1b1b !important;
+  color: #fff !important;
 }
 
 .date-label,
@@ -306,7 +309,6 @@ background-image: url('/imgs/menu.png') !important;
 }
 
 .add-item-form {
-  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 1rem; /* Add some spacing between form rows */

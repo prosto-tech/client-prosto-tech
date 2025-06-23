@@ -6,27 +6,24 @@ import Navigation from './Navigation';
 
 
 export default function ItemDetails({ item }) {
-  console.log(typeof(item.odometer));
-  console.log(typeof(item.transmission));
-  console.log(typeof(item.price));
   const Itemwrap = styled.div`
     width: 100%;
-    height: 400px;
+    height: 500px;
     background: url(${item.image}) bottom center no-repeat;
     background-size: cover;
-    padding: 30px;
+    padding: 120px;
     `;
 
   return (
     <>
-        <Navigation />
+        <Navigation className="navbar-dark !important"/>
       <Itemwrap />
       <section className="about-section">
         <h2 className="about-section__primary pb-4">
           { item.name }
         </h2>
         <h4 className="about-section__sub">
-        <span className="badge badge-price">{ item.price }</span>
+        <span className="badge badge-price">{ item.price + " грн/год" }</span>
         </h4>
         
         <h6 className="about-section_desc pb-4">
@@ -38,9 +35,6 @@ export default function ItemDetails({ item }) {
         </Link>
         <Link className="nav-link text-danger text-center" to="/reserve">
            Замовити оренду &rarr;
-        </Link>
-        <Link className="nav-link white" to="/logout">
-          Вихід
         </Link>
       </section>
     </>

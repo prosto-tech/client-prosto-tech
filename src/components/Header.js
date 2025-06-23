@@ -4,8 +4,10 @@ import Navigation from './Navigation';
 
 export default function Header() {
   return (
-    <header className="header">
+      <>
       <Navigation />
+    <header className="header">
+
 
       <div className="header-content mt-5">
         <h1 className="header-content__title">"Просто Тех"</h1>
@@ -17,5 +19,6 @@ export default function Header() {
         </p>
       </div>
     </header>
+      </>
   );
 }
