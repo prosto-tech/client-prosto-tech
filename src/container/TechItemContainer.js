@@ -5,7 +5,7 @@ import { ScaleLoader } from 'react-spinners';
 import ItemDetails from '../components/ItemDetails';
 import { fetchItem } from '../redux/actions';
 
-function ItemContainer() {
+function TechItemContainer() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const item = useSelector(state => state.item);
@@ -23,4 +23,4 @@ function ItemContainer() {
   );
 }
 
-export default ItemContainer;
+export default TechItemContainer;
