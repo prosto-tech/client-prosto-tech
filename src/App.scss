@@ -4,7 +4,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #373737;
-  background-color: #b9b6b6;
+  background-color: #b9b6b6 !important;
 }
 
 .container {
@@ -304,6 +304,7 @@ background-image: url('/imgs/menu.png') !important;
 }
 
 .add-item-form {
+  background-color: #e8f0ff;
   display: flex;
   flex-direction: column;
   gap: 1rem; /* Add some spacing between form rows */
