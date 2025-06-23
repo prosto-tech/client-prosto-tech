@@ -1,5 +1,5 @@
 export { fetchItem } from './item/itemActions';
-export { fetchItems } from './items/itemActions';
+export { fetchItems } from './items/itemsActions';
 export { loginUser } from './users/userAction';
 export { registerUser } from './users/userRegisterAction';
 export { addFavourites, removeFavourites } from './favourites/favouriteAction';

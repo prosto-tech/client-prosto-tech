@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {
   FETCH_ITEMS_SUCCESS, FETCH_ITEMS_REQUEST, FETCH_ITEMS_FAILURE,
-} from './itemTypes';
+} from './itemsTypes';
 
 export const fetchItemsRequest = () => ({
   type: FETCH_ITEMS_REQUEST,

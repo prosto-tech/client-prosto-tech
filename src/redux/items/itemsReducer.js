@@ -1,6 +1,6 @@
 import {
   FETCH_ITEMS_SUCCESS, FETCH_ITEMS_REQUEST, FETCH_ITEMS_FAILURE,
-} from './itemTypes';
+} from './itemsTypes';
 
 const initialState = {
   loading: false,
@@ -8,7 +8,7 @@ const initialState = {
   error: '',
 };
 
-const itemReducer = (state = initialState, action) => {
+const itemsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ITEMS_REQUEST:
       return {
