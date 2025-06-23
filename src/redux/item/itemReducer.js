@@ -1,6 +1,6 @@
 import {
   FETCH_ITEM_REQUEST, FETCH_ITEM_SUCCESS, FETCH_ITEM_FAILURE,
-} from '../items/itemTypes';
+} from '../items/itemsTypes';
 
 const initialState = {
   loading: false,
