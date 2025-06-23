@@ -19,7 +19,7 @@ export default function Item({ item, handleFavourite }) {
           <BsHeartFill pl-4 size={20} color={item.fav === 'Yes' ? 'red' : 'gray'} title="Add to Favourite" onClick={handleFavourite} />
         </h2>
         <h4 className="about-_info">
-          <span className="badge badge-price">{ item.price + " $" }</span>
+          <span className="badge badge-price">{ item.price + " грн/год" }</span>
           {' '}
           {' '}
         </h4>
