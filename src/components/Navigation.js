@@ -10,7 +10,6 @@ export default function Navigation() {
 
   return (
     <Navbar collapseOnSelect expand="sm">
-      <Navbar.Brand href="/"><img className="logo" src={logo} alt="Item shop Просто Тех"  /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" />
