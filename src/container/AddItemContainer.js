@@ -4,12 +4,14 @@ import PropTypes from 'prop-types';
 import { addItem } from '../redux/actions';
 import { connect } from 'react-redux';
 
-function AddItemContainer({ addItem, itemData }) {
+function AddItemContainer({ addItem, userData  }) {
     const make = useRef('');
     const model = useRef('');
     const price = useRef('');
     const desc = useRef('');
     const image_url = useRef('');
+    const user_id = useRef('');
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -19,6 +21,7 @@ function AddItemContainer({ addItem, itemData }) {
             price: parseFloat(price.current.value), // Convert price to number
             desc: desc.current.value,
             image_url: image_url.current.value,
+            user_id: 3
         };
         addItem(newItem);
     };
@@ -26,8 +29,8 @@ function AddItemContainer({ addItem, itemData }) {
     return (
         <form onSubmit={handleSubmit}>
             <div className="add-item-form">
-                <h2 className="add-item-title">Додати автомобіль</h2>
-                <p className="add-item-subtitle">Заповніть форму, щоб додати новий автомобіль.</p>
+                <h2 className="add-item-title">Додати техніку</h2>
+                <p className="add-item-subtitle">Заповніть форму, щоб додати нову техніку.</p>
                 <div className="input">
                     <label className="form-label" htmlFor="make">
                         Виробник:
@@ -99,10 +102,10 @@ function AddItemContainer({ addItem, itemData }) {
     );
 }
 
-
 const mapStateToProps = state => ({
     userData: state.user,
 });
+
 
 const mapDispatchToProps = dispatch => ({
     addItem: info => dispatch(addItem(info)),
