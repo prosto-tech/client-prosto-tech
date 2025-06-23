@@ -45,8 +45,8 @@ const ReserveForm = ({ memberId, itemId, onSubmitSuccess, onSubmitError }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="driveTitle">Замовити тест-драйв</h2>
-      <p className="driveDesc">Вкажіть будь ласка номер телефону та бажану дату для тест-драйву</p>
+      <h2 className="driveTitle">Орендувати</h2>
+      <p className="driveDesc">Вкажіть будь ласка номер телефону та бажану дату для оренди</p>
       <div className="form-group">
         <label className="phone-label" htmlFor="phone">Номер телефону</label>
         <input
@@ -60,7 +60,7 @@ const ReserveForm = ({ memberId, itemId, onSubmitSuccess, onSubmitError }) => {
         />
       </div>
       <div className="form-group">
-        <label className="date-label" htmlFor="date">Бажана дата тест-драйву</label>
+        <label className="date-label" htmlFor="date">Бажана дата оренди</label>
         <input
           type="date"
           className="form-control"
@@ -73,7 +73,7 @@ const ReserveForm = ({ memberId, itemId, onSubmitSuccess, onSubmitError }) => {
       </div>
       <div className="drive-flex justify-content-between align-items-center mb-3 ml-8">
   <Link className="back_link" to="/items">
-    &larr; До машин
+    &larr; До товарів
   </Link>
   <button type="submit" className="submit" disabled={isLoading}>
     {isLoading ? 'Опрацювання...' : 'Замовити'}

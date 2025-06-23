@@ -49,10 +49,10 @@ export default function ItemDetails({ item }) {
         </h6>
         <hr />
         <Link className="nav-link text-danger text-center" to="/items">
-          &larr; До машин
+          &larr; До товарів
         </Link>
         <Link className="nav-link text-danger text-center" to="/reserve">
-           Замовити тест-драйв &rarr;
+           Замовити оренду &rarr;
         </Link>
         <Link className="nav-link white" to="/logout">
                     Вихід

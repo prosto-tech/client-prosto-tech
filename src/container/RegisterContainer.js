@@ -36,7 +36,7 @@ function RegisterContainer({ userData, signupUser }) {
     ? (
       <>
         <h2 className="about-section__primary">Зареєструватись</h2>
-        <p className="mb-3">Вітаю, зареєструйтесь для того щоб переглянути авто або замовити тест-драйв</p>
+        <p className="mb-3">Вітаю, зареєструйтесь для того щоб переглянути товари або орендувати техніку</p>
         <p className="text-danger">{ error}</p>
         <FormElement username={username} password={password} type="Зареєструватись" handleSubmit={handleRegistration} />
       </>
