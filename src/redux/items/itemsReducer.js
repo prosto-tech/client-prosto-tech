@@ -34,4 +34,4 @@ const itemsReducer = (state = initialState, action) => {
   }
 };
 
-export default itemReducer;
+export default itemsReducer;
