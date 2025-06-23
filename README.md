@@ -1,2 +1,2 @@
-# ecoway-client
-web part of ecoway shop
+# prosto-tech-client
+web part of "Просто Тех"
