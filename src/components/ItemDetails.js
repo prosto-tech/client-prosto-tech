@@ -19,29 +19,14 @@ export default function ItemDetails({ item }) {
 
   return (
     <>
-      <Itemwrap>
         <Navigation />
-      </Itemwrap>
+      <Itemwrap />
       <section className="about-section">
         <h2 className="about-section__primary pb-4">
           { item.name }
         </h2>
         <h4 className="about-section__sub">
         <span className="badge badge-price">{ item.price }</span>
-          <span className="badge badge-secondary">{ item.transmission }</span>
-          {' '}
-          {' '}
-          <span className="badge badge-pill badge-success">
-            AC -
-            { item.ac }
-          </span>
-          {' '}  
-          <span className="badge badge-odometer">{ item.odometer + " км"}</span>
-          {' '}
-          <span className="badge badge-color">{ item.color}</span>
-          {' '}
-          <span className="badge badge-battery">{ item.battery + " кВт" }</span>
-          {' '}
         </h4>
         
         <h6 className="about-section_desc pb-4">
@@ -55,8 +40,8 @@ export default function ItemDetails({ item }) {
            Замовити оренду &rarr;
         </Link>
         <Link className="nav-link white" to="/logout">
-                    Вихід
-                  </Link>
+          Вихід
+        </Link>
       </section>
     </>
   );
