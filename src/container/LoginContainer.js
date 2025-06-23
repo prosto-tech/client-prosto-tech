@@ -37,7 +37,7 @@ function LoginContainer({ logUserIn, userData }) {
         <h2 className="about-section__primary">Увійти</h2>
         <p className="mb-3">Вітаємо, увійдіть щоб переглянути товари або орендувати техніку</p>
         <p className="text-danger">{ error}</p>
-        <FormElement username={username} password={password} type="Sign in" handleSubmit={handleLogin} />
+        <FormElement username={username} password={password} type="Увійти" handleSubmit={handleLogin} />
       </>
     )
     : (
