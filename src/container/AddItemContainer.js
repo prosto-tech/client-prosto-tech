@@ -21,7 +21,6 @@ function AddItemContainer({ addItem, userData  }) {
             price: parseFloat(price.current.value), // Convert price to number
             desc: desc.current.value,
             image_url: image_url.current.value,
-            user_id: 3
         };
         addItem(newItem);
     };
